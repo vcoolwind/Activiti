@@ -15,7 +15,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.integration.dsl.IntegrationFlow;
 import org.springframework.integration.dsl.IntegrationFlows;
-import org.springframework.integration.dsl.support.GenericHandler;
+import org.springframework.integration.handler.GenericHandler;
+import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;
 
 @SpringBootApplication
@@ -60,7 +61,7 @@ public class Application {
                 .from(inboundGateway)
                 .handle(new GenericHandler<DelegateExecution>() {
                     @Override
-                    public Object handle(DelegateExecution execution, Map<String, Object> headers) {
+                    public Object handle(DelegateExecution execution, MessageHeaders headers) {
                         return MessageBuilder.withPayload(execution)
                                 .setHeader("projectId", "3243549")
                                 .copyHeaders(headers).build();

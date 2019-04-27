@@ -73,7 +73,6 @@ public class CustomMybatisMapperConfigurationTest {
                 .getEnvironment()
                 .getPropertySources()
                 .addFirst(new PropertiesPropertySource("testProperties", springBootProperties));
-
         annotationConfigApplicationContext.refresh();
         return annotationConfigApplicationContext;
     }
