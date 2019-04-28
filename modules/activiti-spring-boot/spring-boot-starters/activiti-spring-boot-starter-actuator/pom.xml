@@ -20,14 +20,17 @@
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-image-generator</artifactId>
+			<version>${activiti.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-bpmn-model</artifactId>
+			<version>${activiti.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-bpmn-layout</artifactId>
+			<version>${activiti.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
