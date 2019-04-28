@@ -96,4 +96,5 @@ public class StatefulObject implements Serializable, InitializingBean {
     Assert.notNull(this.processInstance, "the processInstance should be equal to the currently active processInstance!");
     logger.info("the 'processInstance' property is non-null: PI ID#{}", this.processInstance.getId());
   }
+
 }

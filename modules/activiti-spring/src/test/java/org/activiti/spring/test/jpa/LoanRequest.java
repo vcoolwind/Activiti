@@ -19,6 +19,7 @@ import javax.persistence.*;
  * @author Frederik Heremans
  */
 @Entity(name = "SPRING_TEST_ORDER")
+@Table(name = "SPRING_TEST_ORDER")
 public class LoanRequest {
 
   @Id

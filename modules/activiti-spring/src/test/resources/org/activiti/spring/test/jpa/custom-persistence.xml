@@ -15,6 +15,7 @@
             <property name="openjpa.LockTimeout " value="30000"/>
             <property name="openjpa.jdbc.SynchronizeMappings"
                       value="buildSchema(SchemaAction='add,deleteTableContents')"/>
+            <property name="hibernate.hbm2ddl.auto" value="update" />
         </properties>
 
     </persistence-unit>
