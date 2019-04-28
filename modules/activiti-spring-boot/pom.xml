@@ -74,6 +74,15 @@
 
     <repositories>
         <repository>
+            <id>aliyunmaven</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>maven-repo</id>
+            <url>http://repo1.maven.org/maven2/</url>
+        </repository>
+
+        <repository>
             <id>spring-snapshots</id>
             <name>Spring Snapshots</name>
             <url>http://repo.spring.io/snapshot</url>
